@@ -1,6 +1,11 @@
 MPU6050_Arduino
 ===============
 
+Please follow this link for better formated explanation 
+http://hobbylogs.me.pn/?p=47
+
+
+
 gyro_accel header file description
 This header will only work for MPU6050 based boards using I2C address of 0x68 and it should work on both Arduino Uno and Arduino Mega. This header file requires Wire.h file before including “gyro_Accel.h” file. Moreover, before calling of the built-in functions, I2C bus must be initialized by giving this command Wire.begin();.
 ## Global variables
@@ -52,3 +57,6 @@ function will use these scaling factors to calculate the output results. If valu
 
 MPU6050_OffsetCal()	
 This function will calculate the offset in both gyroscope and accelerometer. The calculated offsets are stored in accel_x_OC, accel_y_OC, accel_z_OC, gyro_x_OC, gyro_y_OC and gyro_z_OC. It is required to place the x and y axes of the MPU6050 chip horizontal and z axis perpendicular to the ground while performing this calibration. Moving the hardware during the calibration process will reduce the accuracy of the calculated offsets. The z axis is calibrated to 9.81 m/s2 (1g) and this is hardcoded in the code. So, it is a good idea to change the scaling to 4g and bandwidth to inf before calibrating the offset.
+
+Read More on this link:
+http://hobbylogs.me.pn/?p=47
