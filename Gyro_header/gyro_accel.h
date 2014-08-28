@@ -12,3 +12,10 @@
   void MPU6050_OffsetCal();
  
 #endif
+
+/* Author = helscream (Omer Ikram ul Haq)
+Last edit date = 2014-06-22
+Website: http://hobbylogs.me.pn/?p=47
+Location: Pakistan
+Ver: 0.1 beta --- Start
+*/
